@@ -1,0 +1,190 @@
+body {
+  background: #222 !important;
+  color: white !important;
+}
+
+main {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  
+}
+
+.secondaryColor {
+  color: rgb(84, 161, 84);
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance:none;
+  width:20px;
+  height:20px;
+  background:rgb(182, 182, 182);
+  margin-bottom: -2px;
+  border:1px solid rgb(188, 188, 190);
+
+}
+
+/* Reverse order UL 
+ul { 
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+li {
+  flex: 0 0 auto;
+}*/
+
+input[type='text'] {
+
+  background:rgb(182, 182, 182);
+
+}
+
+.smallBtn {
+  background: #444;
+  border: none;
+}
+
+input[type='checkbox']:checked {
+  background: #abd;
+}
+
+h1 {
+  padding: 1rem 0 !important;
+}
+
+.lead {
+  margin: 1rem;
+  background: rgb(196, 69, 69);
+}
+
+.inputField {
+  display: flex;
+}
+
+.activityInput {
+  flex: 2;
+  padding: .5rem;
+  border: 0px;
+  border-radius: 0;
+}
+
+.activityInput::placeholder {
+  color: black;
+}
+
+.addButton {
+  flex: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   appearance: none;
+   border-radius: 0;
+   background: rgb(63, 102, 63);
+   border: none;
+   color: white;
+}
+
+.sortButton {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   appearance: none;
+   border-radius: 0;
+   background: rgb(63, 102, 63);
+   border: none;
+   color: white;
+   padding: 0 1rem;
+   margin-top: 1rem;
+}
+
+#todoList{
+  list-style: none;
+  padding: 0;
+  font-size: 1.3em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+#todoList button {
+  background: none;
+	color: lightcoral;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+  outline: inherit;
+  float: right;
+  padding: 0;
+
+}
+
+#todoList li {
+ 
+  padding: .5rem 0;
+}
+
+#todoListDone {
+  list-style: none;
+  padding: 0;
+  font-size: 1.3em;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#todoListDone li {
+  border-bottom: 1px solid #a8a8a8;
+  padding: .5rem 0 0 0;
+  
+}
+
+#todoListDone i {
+  float: right;
+  color: lightgreen;
+  
+}
+
+#todoListDone button {
+  background: none;
+	color: lightcoral;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+  outline: inherit;
+  float: right;
+  padding: 0;
+
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+@media screen and (min-width: 768px) {
+
+  main {
+    max-width: 50%;
+    margin: 5vh auto 20vh;
+  }
+
+  #todoList li:hover {
+    background-color: #444;
+    transition: ease-out .5s;
+  }
+
+  #todoListDone li:hover {
+    background-color: rgba(63, 102, 63, 0.8);
+    transition: ease-out .5s;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  main {
+    max-width: 40%;
+    margin: 5vh auto 20vh;
+  }
+
+}
