@@ -69,11 +69,6 @@ function regretItem(x, y) {
     renderCompletedActivityList();
 }
 
-function clearTodo() {
-    localStorage.removeItem("activities");
-    location.reload();
-}
-
 function clearDone() {
     localStorage.removeItem("completedActivities");
     location.reload();
