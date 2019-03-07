@@ -35,7 +35,6 @@ function removeItem(x) {
     var list = JSON.parse(localStorage.getItem("activities"));
     list.splice(x, 1);
     localStorage.setItem("activities", JSON.stringify(list));
-
     renderActivityList();
 }
 
@@ -53,10 +52,8 @@ function taskComplete(x, y) {
     var regularTodoList = JSON.parse(localStorage.getItem("activities"));
     regularTodoList.splice(y, 1);
     localStorage.setItem("activities", JSON.stringify(regularTodoList));
-
     renderActivityList();
     renderCompletedActivityList();
-
 }
 
 function regretItem(x, y) {
@@ -68,7 +65,6 @@ function regretItem(x, y) {
     var completedTodoList = JSON.parse(localStorage.getItem("completedActivities"));
     completedTodoList.splice(y, 1);
     localStorage.setItem("completedActivities", JSON.stringify(completedTodoList));
-
     renderActivityList();
     renderCompletedActivityList();
 }
